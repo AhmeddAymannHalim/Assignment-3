@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="2899445.png">
+    <title>Bookamrk</title>
+    <link rel="stylesheet" href="cs/all.min.css">
+    <link rel="stylesheet" href="cs/bootstrap.min.css">
+    <link rel="stylesheet" href="cs/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="py-2 text-center">
+            <h1 id="hover-h1" class="py-5">Bookmarker</h1>
+            <h2 class="py-3"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite  sites <i class="fa-solid fa-bookmark"></i></h2>
+        </div>
+        <div>
+            <label class="py-2 fw-bold" for="siteName"><i class="fa-solid fa-book-bookmark px-1"></i> Site Name</label>
+            <input id="bookmarkNameInput" oninput="validatBookMark(this.value)" type="text" placeholder="Bookmark Name" class="form-control mb-3">
+       
+            <label class="py-2 fw-bold" for="siteName"><i class="fa-solid fa-link px-1"></i> Site URL</label>
+            <input id="bookmarkSiteUrlInput" oninput="validatBookMarkUrl(this.value)" type="url" placeholder="Website URL" class="form-control ">
+            <div class="text-center py-4 row-button">
+                <button class="button-submit">Submit</button>
+            </div>
+            <table class="table mt-4 text-center">
+                <thead>
+                    <th>Index</th>
+                    <th>WebsiteName</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tBody">
+                   
+                </tbody>
+
+            </table>
+         
+       </div>
+    </div>
+   
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

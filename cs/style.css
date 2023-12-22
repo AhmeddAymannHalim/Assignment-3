@@ -1,0 +1,74 @@
+/* Variables */
+body{
+    background-color: #f7ecde;
+}
+:root{
+    --default-font:'Pacifico', cursive;
+    --second-font:'Righteous', sans-serif;
+}
+
+.container h1{
+    font-family: var(--default-font);
+    font-size: 50px;
+    border-bottom: 2px dotted;
+    position: relative;
+    
+    
+}
+.container h1::before{
+    content: "";
+    position: absolute;
+    bottom: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 15%;
+    z-index: -1;
+    background-color: #ffc107;
+    transition: all 0.5s;
+}
+.container h1:hover::before{
+    height: 25%;
+}
+
+
+h2{
+    font-family: var(--second-font);
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+   
+}
+
+.button-submit{
+    padding: 6px 48px;
+    border: 0;
+    background-color: #d1512d;
+    color: white;
+    border-radius: 8px;
+    transition: 0.5s;
+
+}
+button:hover{
+    background-color: #bb4120;
+}
+.row-button{
+    border-bottom: 2px dotted;
+
+}
+.form-control:focus{
+    border-color:#d99c39;
+    box-shadow: 0 0 0 0.25rem #fec26055
+}
+.container table tbody .button-visit{
+    background-color: #9eb23b;
+    padding: 6px 12px !important;
+    
+    
+}
+.container table tbody .button-visit:hover{
+    border: 1px solid #6e8018;
+    background-color: #8a9e23;
+}
